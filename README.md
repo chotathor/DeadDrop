@@ -1,29 +1,27 @@
 # Dead Drop — Location-Based BLE Messaging
+[![Release](https://img.shields.io/github/v/release/chotathor/DeadDrop)](https://github.com/chotathor/DeadDrop/releases)
+[![License](https://img.shields.io/github/license/chotathor/DeadDrop)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/chotathor/DeadDrop)](https://github.com/chotathor/DeadDrop/stargazers)
 
-> Leave messages at physical locations. Pick up messages left by others. Offline, anonymous, free.
+> Leave messages at physical locations. Anyone nearby picks them up. Offline-first.
+
+## Download
+**[Get the APK](https://github.com/chotathor/DeadDrop/releases)**
 
 ## Features
-- BLE mesh network — no internet needed
-- GPS geo-tagged messages
-- Auto-discovery of nearby devices
+- GPS geo-tagged message drops
+- BLE mesh for offline discovery
+- WebSocket sync for global delivery
 - Threaded replies & upvotes
 - Proximity map (signal strength radar)
 - Favorite devices with auto-alert
 - Export scan reports
 
-## How It Works
-Drop a message at your location. Anyone passing by with the app picks it up via BLE. Messages propagate through the mesh network. Optional WebSocket sync for global delivery via VPS.
+## Architecture
+BLE discovers nearby users → messages sync via WebSocket to VPS → global delivery. Offline? Messages cache locally and sync when reconnected.
 
 ## WebSocket Server
-The backend sync server runs on port 8081. Deploy with:
 
-
-## Tech Stack
-- Kotlin Android
-- BLE GATT server + advertising
-- OkHTTP WebSocket client
-- Python WebSocket server
 
 ## License
 MIT
