@@ -1,0 +1,10 @@
+<resources>
+    <style name="RadarTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#00d684</item>
+        <item name="colorPrimaryDark">#001a0d</item>
+        <item name="colorAccent">#00d684</item>
+        <item name="android:windowBackground">#080812</item>
+        <item name="android:statusBarColor">#080812</item>
+        <item name="android:navigationBarColor">#080812</item>
+    </style>
+</resources>
